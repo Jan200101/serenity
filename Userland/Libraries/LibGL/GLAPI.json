@@ -984,7 +984,7 @@
             "pointer_argument": "params",
             "types": {
                 "f": {},
-                "fv": {"unimplemented": true},
+                "fv": {},
                 "i": {},
                 "iv": {"unimplemented": true}
             }

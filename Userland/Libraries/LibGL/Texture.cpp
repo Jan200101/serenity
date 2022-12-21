@@ -438,6 +438,17 @@ void GLContext::gl_tex_env(GLenum target, GLenum pname, GLfloat param)
             }
             break;
         }
+        case GL_TEXTURE_ENV_COLOR : {
+            auto param_rgba = &param;
+            //m_active_texture_unit->set_rgb_source(GL_SRC0_RGB, param_rgba[0]);
+            //m_active_texture_unit->set_alpha_source(GL_SRC0_ALPHA, param_rgba[3]);
+            //m_active_texture_unit->set_rgb_source(GL_SRC1_RGB, param_rgba[1]);
+            //m_active_texture_unit->set_alpha_source(GL_SRC1_ALPHA, param_rgba[3]);
+            //m_active_texture_unit->set_rgb_source(GL_SRC2_RGB, param_rgba[2]);
+            //m_active_texture_unit->set_alpha_source(GL_SRC2_ALPHA, param_rgba[3]);
+            dbgln("DEBUG: GL_TEXTURE_ENV_COLOR");
+            break;
+        }
         default:
             RETURN_WITH_ERROR_IF(true, GL_INVALID_ENUM);
         }
