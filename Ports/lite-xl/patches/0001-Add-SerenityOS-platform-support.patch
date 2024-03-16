@@ -5,27 +5,12 @@ Subject: [PATCH] Add SerenityOS platform support
 
 Signed-off-by: Jan200101 <sentrycraft123@gmail.com>
 ---
- meson.build                         |  3 +-
  src/api/dirmonitor/inodewatcher.cpp | 75 +++++++++++++++++++++++++++++
  src/main.c                          |  7 ++-
  src/meson.build                     | 17 ++++---
  4 files changed, 93 insertions(+), 9 deletions(-)
  create mode 100644 src/api/dirmonitor/inodewatcher.cpp
 
-diff --git a/meson.build b/meson.build
-index 3f88be37..70627782 100644
---- a/meson.build
-+++ b/meson.build
-@@ -4,7 +4,8 @@ project('lite-xl',
-     license : 'MIT',
-     meson_version : '>= 0.56',
-     default_options : [
--        'c_std=gnu11'
-+        'c_std=gnu11',
-+        'cpp_std=c++20'
-     ]
- )
- 
 diff --git a/src/api/dirmonitor/inodewatcher.cpp b/src/api/dirmonitor/inodewatcher.cpp
 new file mode 100644
 index 00000000..e749f5bd

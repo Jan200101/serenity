@@ -14,3 +14,6 @@ system = 'serenity'
 cpu_family = 'x86'
 cpu = '@SERENITY_ARCH@'
 endian = 'little'
+
+[built-in options]
+cpp_std = 'c++20'
